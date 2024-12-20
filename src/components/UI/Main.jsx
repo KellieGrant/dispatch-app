@@ -11,4 +11,4 @@ const Main = ({ children }) => {
   };
   
 
-export default Main;
+export default Main; 

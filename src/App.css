@@ -6,6 +6,9 @@ body {
   background-color: rgba(4, 1, 19, 0.90);
 }
 
+.sidebar, nav {
+  z-index: 10;
+}
 
 /* Components Styles */
 
@@ -95,11 +98,31 @@ a:link, a:visited {
   box-shadow: -4px 0 6px rgba(0, 0, 0, 0.5);
 }
 
-h1 {
+.sidebar h1 {
   text-decoration: underline;
   color: #fff;
   text-align: center;
   font-size: 2rem;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar ul li {
+  color: grey;
+  text-decoration: none;
+  text-align: center;
+  padding: .5rem;
+}
+
+.sidebar .unassigned {
+  height: 45%;
+  border-bottom: 3px solid white;
+}
+
+.sidebar .assigned {
+  margin-top: 5vh;
 }
 
 
@@ -131,5 +154,13 @@ h1 {
 
 /* Pages Styles */
 
-/* Home Page */
+/* New Trip */
+.main-area .newtrip-content {
+  width: 100%;
+  padding: 1rem;
+  color: white;
+}
 
+form {
+  color: white;
+}

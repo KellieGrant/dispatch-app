@@ -6,6 +6,8 @@ import Nav from './components/UI/Nav';
 import Sidebar from './components/UI/sidebar';
 import Main from './components/UI/Main';
 import Home from './pages/Home';
+import Newtrip from './pages/NewTrip';
+
 
 function App() {
   const [count, setCount] = useState(0);
@@ -17,6 +19,8 @@ function App() {
       <Main>
         <Routes>
           <Route path='/' element={<Home />} />
+          <Route path='/new-trip' element={<Newtrip />} />
+          <Route path='*' element={<Home />} />
         </Routes>
       </Main>
     </BrowserRouter>
